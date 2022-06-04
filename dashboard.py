@@ -28,6 +28,12 @@ ticks =['Day','Daily Positive','Daily Death','Daily Hospitalized','Daily Positiv
 with st.container():
     st.title("DASHBOARD COVID 19 - CASE STUDY DKI JAKARTA")
 
+    st.write("""
+    Disclaimer:
+    1. This website is prepared only for practising data presentation using Python and Streamlit.
+    2. Do not use any information in this website as reference of formal medical study or creating public policy.
+    """)
+
 # Opening Summary
 with st.container():
     st.header('DATA SUMMARY')
@@ -249,3 +255,7 @@ if show_pairplot:
     handles = fig10._legend_data.values()
     labels = fig10._legend_data.keys()
     st.pyplot(fig10)
+
+st.markdown("""---""")
+st.write("created by M. Sina S.")
+st.write("source code https://github.com/aasina/dashboardcovid.git")
